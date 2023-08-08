@@ -45,3 +45,5 @@ The example can be further extended to cover more advanced synchronization scena
 
 Feel free to modify and experiment with the code to gain a better understanding of how mutexes and condition variables work in C++. Happy coding!
 Please replace the project directory structure, compilation commands, and other details as necessary to match your actual setup and platform.
+
+Reference: https://en.cppreference.com/w/cpp/thread/condition_variable/wait
