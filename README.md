@@ -22,7 +22,7 @@ g++ -std=c++11 -c src/Main.cpp -o build/Main.o
 g++ -std=c++11 build/MyManipulator.o build/MyWaiter.o build/Main.o -o myprogram
 ./myprogram
 ```
-##Description
+## Description
 This example showcases how to use a condition variable and mutex to synchronize threads in C++. The scenario involves one thread waiting for a specific condition to be met by another thread before proceeding.
 
 MyManipulator.cpp: Contains a function that manipulates a flag and signals the condition variable.
