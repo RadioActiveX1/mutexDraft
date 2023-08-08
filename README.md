@@ -2,19 +2,6 @@
 
 This repository provides an example of using mutex and condition variables in C++ to synchronize threads. The example demonstrates a scenario where one thread waits until a specific condition is met by another thread before proceeding.
 
-## Project Structure
-
-project/
-├── include/
-│ └── MyHeader.hpp
-├── src/
-│ ├── Main.cpp
-│ ├── MyManipulator.cpp
-│ └── MyWaiter.cpp
-├── build/
-└── myprogram
-
-
 - `include/`: Directory containing the header file `MyHeader.hpp`.
 - `src/`: Directory containing the source code files `Main.cpp`, `MyManipulator.cpp`, and `MyWaiter.cpp`.
 - `build/`: Directory where object files will be generated during compilation.
@@ -34,8 +21,8 @@ g++ -std=c++11 -c src/MyWaiter.cpp -o build/MyWaiter.o
 g++ -std=c++11 -c src/Main.cpp -o build/Main.o
 g++ -std=c++11 build/MyManipulator.o build/MyWaiter.o build/Main.o -o myprogram
 ./myprogram
-
-Description
+```
+##Description
 This example showcases how to use a condition variable and mutex to synchronize threads in C++. The scenario involves one thread waiting for a specific condition to be met by another thread before proceeding.
 
 MyManipulator.cpp: Contains a function that manipulates a flag and signals the condition variable.
